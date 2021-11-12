@@ -1,0 +1,420 @@
+
+
+
+/* nav-bar styles */
+.navbar-item-box {
+  background: #1a251d;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  
+  
+}
+
+.navbar-item-box > * {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+
+
+#logo-box img{
+  max-height: 10vh;
+  width: auto;
+}
+
+
+.navbar-logout-btn {
+  background-color: rgb(107, 179, 26);
+  border-radius: 7px;
+  color: #1a251d;
+  background: linear-gradient(#e5f4f9, #b2e0ef, #2bc011, #46c30b, #0fb617, #b2e0ef);
+  margin-right: 1%;
+  margin-top: inherit;
+  
+}
+
+/* sign-up form style */
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(./imgs/register-image.jpg);  
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+.signup-form > * {
+  display: flex;
+  
+ 
+}
+ 
+.signup-form input, button {
+  border-radius: 5px;
+}
+.register-btn {
+  color: rgb(51, 87, 10);
+}
+/* login-form styles */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  background: url(./imgs/signin-img.jpg) no-repeat  center center fixed;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form input, button{
+  border-radius: 5px;
+}
+
+/* profile page style */
+
+.profile-container {
+  background: url(./imgs/profile-img.jpg) no-repeat center center fixed;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+ }
+
+ .profile-container > * {
+   margin-left: 5%;
+ }
+
+ .profile-container h6 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(5, 5, 5);
+    display: flex;
+    width: 35%;
+    height: 40%;
+    border-style: outset 
+ }
+
+ .profile-container h2 {
+   font: 2em  Chancery;
+ }
+
+ .profile-img {
+   border: 3px #1eb84c solid;
+   border-radius: 5px;
+   width: 100%;
+   height: auto;
+   border-style: outset;
+
+ }
+
+.edit-btn {
+  background-color: rgb(107, 179, 26);
+  border-radius: 7px;
+  color: #1a251d;
+  background: linear-gradient(#e5f4f9, #b2e0ef, #2bc011, #46c30b, #0fb617, #b2e0ef);
+}
+
+.profile-img-container {
+  width: 20%;
+  height: auto;
+}
+
+.profile-container input {
+  border-radius: 5px;
+}
+
+/* form house style */
+
+#form-house {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #1a251d;
+  flex-direction: column;
+  height: 100vh;
+  
+}
+
+#form-house select {
+  display: inherit;
+  margin-left: 25%;
+  
+}
+
+#form-house textarea {
+  width: 175%;
+}
+
+#form-house input, textarea, select {
+  border-radius: 5px;
+  margin-bottom: 5%;
+  
+}
+
+/* cards styles */
+
+.card {
+  background-color: #1a251d;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 1%;
+  border-style: inset;
+  justify-content: space-around;
+  margin: auto 0% auto 0%;
+  padding: 2%;
+  border-color: rgb(107, 179, 26);
+  width: 100vw;
+}
+
+.card-left {
+  width: 40%;
+}
+
+.card-right {
+  position: relative;
+  width: 40%;
+}
+
+.card-right img {
+  max-width: 100%;
+  height: auto;
+  
+  
+}
+
+.price-tag {
+  background-color: rgba(60,60,59,0.8);
+  position: absolute;
+  top: 0px;
+  width: 27%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/* Home styles */
+
+
+.searchBar {
+  position: relative;
+  background: rgb(107, 179, 26);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 10%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0% 5% 1% 5%;
+  border-style: inset;
+  border-color: rgba(60,60,59,0.8);
+  border-radius: 1%;
+  opacity: 0.7; 
+  
+}
+
+.price-slider {
+  /* width: 10%; */
+  
+  position: relative;
+}
+
+/* edit-house */
+.edit-house {
+  display: flex;
+  ;
+  height: 90vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+  
+.link-btn-submit {
+  
+}
+
+#form-edit-house {
+  
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  justify-content: space-between;
+  
+  
+}
+
+#form-edit-house textarea, input, button {
+  display: flex;
+  color: #0fb617;
+  border-radius: 5%;
+  margin-top: 5%;
+  border-color: rgb(107, 179, 26)
+}
+
+
+
+#form-edit-images {
+display: flex;
+flex-direction: column;
+margin-top: 2%;
+
+}
+
+#form-edit-images > *{
+  margin-top: 2%;
+}
+
+/* detail-house styles */
+
+.detail-house {
+  background-color:  #1a251d;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.gallery {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3% auto;
+  align-items: stretch;
+  justify-content: center;
+}
+
+
+
+.gal-img {
+  height: auto;
+  max-width: 300px;
+  
+}
+
+.text-box-detail {
+  margin: 5% 2% auto 2%;
+  padding: 1%;
+}  
+.text-box-detail h3 {
+  text-align: center;
+  color: #0fb617;
+}
+.text-box-detail p {
+   color: rgb(255, 255, 255);
+}
+
+.btns-detail {
+  display: flex;
+  justify-content: center;
+
+}
+
+.map-detail  {
+  margin: 3% auto
+}
+  
+
+/* properties style */
+.properties {
+  color: rgb(253, 253, 253);
+  background-color: #0fb617;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.prop-box {
+  background-color: #1a251d;;
+
+}
+
+.prop-box > *{
+  text-decoration: none;
+  color: rgb(253, 253, 253);
+}
+
+.prop-box h3{
+  text-decoration: none;
+  padding: 2%;
+  margin: 1% auto ;
+  text-align: center;
+}
+
+.btns-prop {
+  display: flex;
+  justify-content:  center;
+  
+
+}
+.btns-prop a{
+ text-decoration: none;
+ color: rgb(5, 5, 5);
+ 
+
+}
+
+.prop-title {
+  margin-left: 5%;
+}
+
+/*delete property styles */
+.delete-prop {
+  color: rgb(255, 255, 255);
+  background-color: green;
+  border-radius: 5%;
+  border-style: inset;
+  border-color: rgb(55, 182, 23);
+  width: 25%;
+  margin: 25% auto;
+  padding: 10px;
+}
+
+.delete-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* favourites list styles */
+ .fav-address h3{
+   text-decoration: none;
+   color: white;
+   
+   
+ }
+
+ .house-icon {
+   color: white;
+   margin: 2% auto 0% 5%
+ }
+
+ /* map add address style */
+
+ .map-address {
+   background-color: rgb(5, 5, 5);;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   background: url(./imgs/google-maps-address.jpg) no-repeat center center fixed;
+ }
+
+ .address-link {
+  color: #0fb617;
+  border-radius: 5%;
+  margin-top: 5%;
+  border-color: rgb(107, 179, 26);
+  border: solid;
+  text-decoration: none;
+ }
