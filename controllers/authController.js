@@ -39,8 +39,8 @@ module.exports.profile = (req, res, next) => {
   User.findById(req.user.id)
   .then(user => res.status(201).json(user))
   .catch(next)
-  console.log(req.user)
-  
+  //console.log(req.user)
+  console.log(process.env.CLOUDINARY_CLOUD_NAME)
 }
 
 module.exports.updateProfile = (req, res, next)=> {
