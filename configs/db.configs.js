@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const DB_NAME = process.env.DB_NAME || 'house4ya'
 //const MONGODB_URI = `mongodb://localhost:27017/${DB_NAME}`
-const MONGODB_URI = `mongodb+srv://jesus:carlos123@cluster4you.i1e2u.mongodb.net/house4yadb?retryWrites=true&w=majority`
+const MONGODB_URI = `mongodb+srv://carlos:carlos123@cluster0.i1e2u.mongodb.net/whateverdatabase?retryWrites=true&w=majority`
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true })
 .then( () => {
