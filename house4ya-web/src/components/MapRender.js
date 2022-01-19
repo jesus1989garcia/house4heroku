@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useEffect, useState } from 'react'
 import { GoogleMap, withScriptjs, withGoogleMap, Marker } from 'react-google-maps'
 
 function MapRender(props) {
+  const [coordinates, setCoordinates ] = useState(props) 
+ useEffect(() => {
+   setCoordinates(props)
+ },[props])
   return (
-      <GoogleMap defaultZoom={18} defaultCenter={{ lat: Number(props.latitude), lng: Number(props.longitude) }}>
-      <Marker  position={{lat:Number(props.latitude),lng: Number(props.longitude)}}></Marker>
+      <GoogleMap defaultZoom={18} defaultCenter={{ lat: Number(coordinates.latitude), lng: Number(coordinates.longitude) }}>
+      <Marker  position={{lat:Number(coordinates.latitude),lng: Number(coordinates.longitude)}}></Marker>
   
     </GoogleMap>
     
@@ -17,7 +21,23 @@ function MapRender(props) {
 const WrapMap  = withScriptjs(withGoogleMap(MapRender))
 
 function WrappedMap(props) {
- console.log(props)
+ 
+ const [coordinates, setCoordinates ] = useState(props) 
+ useEffect(() => {
+   setCoordinates(props)
+ },[props])
+
+ const [loaded, setLoaded] = useState(null);
+  useEffect(() => {
+setLoaded(false);
+if (props.lat) {
+  setLoaded(true);
+
+}
+}, [props.lat, props.lng]);
+
+ console.log(coordinates)
+ {{ if (loaded) {
   return (
     <div style= {{ height:'70vh', width:'70vw'}}>
     <WrapMap 
@@ -25,13 +45,15 @@ function WrappedMap(props) {
     loadingElement={<div style= {{ height:"100%" }} />}
     containerElement={<div style= {{ height:"100%" }} />}
     mapElement={<div style= {{ height:"100%" }} />}
-    latitude={props.lat}
-    longitude={props.lng}
+    latitude={coordinates.lat}
+    longitude={coordinates.lng}
     />
     
     
   </div>
   )
+  } else return "noOoO" }}
+  
  
 } 
 

@@ -37,8 +37,9 @@ class detailHouse extends Component {
   
 
   render() {
-    const estatu = [this.state.house]
+    const estatu = [this.state.house]  //try render map with conditional like screenshot
     
+    console.log("this is " + this.state.house.lat)
     return (
       <div className="detail-house">
         <hr width="50%"></hr>
@@ -47,9 +48,9 @@ class detailHouse extends Component {
         </div>
         <div>
           <div>
-            { estatu.filter(casa => casa.id === this.props.match.params.id).map(hous => <div className="gallery">{hous.photos.map(photo =>
+            { estatu.filter(casa => casa.id === this.props.match.params.id).map(hous => <div  className="gallery">{hous.photos.map(photo =>
               
-                <img src={photo} alt="ima" className="gal-img"></img>
+                <img  src={photo} alt="ima" className="gal-img"></img>
                 
                  )}</div>) }
 
