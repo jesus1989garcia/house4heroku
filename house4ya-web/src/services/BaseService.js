@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const http = axios.create({
-  baseURL: /*'https://house4ya.herokuapp.com' ||*/'http://localhost:5000',
+  baseURL: 'https://house4ya.herokuapp.com' ||'http://localhost:5000',
   withCredentials: true
 })
 
