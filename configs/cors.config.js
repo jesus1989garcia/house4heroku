@@ -1,7 +1,7 @@
 const createError = require('http-errors')  
 const cors = require('cors')
 
-const allowedOrigins = /*'https://house4ya.herokuapp.com' ||*/ [ "http://localhost:3000" ]
+const allowedOrigins = 'https://house4ya.herokuapp.com' || [ "http://localhost:3000" ]
 
 module.exports = cors({
   origin: (origin, next) => {
