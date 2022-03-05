@@ -15,11 +15,11 @@ const houseSchema = new mongoose.Schema({
     type: [String]
   },
   latitude: {
-    type: String
+    type: Number
     
   },
   longitude: {
-    type: String
+    type: Number
   },
   LaCity: {
     type: [Object]

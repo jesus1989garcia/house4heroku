@@ -10,8 +10,12 @@
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+  width: 100vw;
   
   
+}
+.burguer {
+  display: none;
 }
 
 .navbar-item-box > * {
@@ -71,6 +75,7 @@
   height: 90vh;
   justify-content: center;
   align-items: center;
+  background-size: cover;
 }
 
 .login-form input, button{
@@ -86,7 +91,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+  background-size: cover;
  }
 
  .profile-container > * {
@@ -106,6 +111,9 @@
  .profile-container h2 {
    font: 2em  Chancery;
  }
+ .edit-btn-link {
+  text-decoration: none;
+}
 
  .profile-img {
    border: 3px #1eb84c solid;
@@ -124,7 +132,7 @@
 }
 
 .profile-img-container {
-  width: 20%;
+  width: 8%;
   height: auto;
 }
 
@@ -174,7 +182,7 @@
   margin: auto 0% auto 0%;
   padding: 2%;
   border-color: rgb(107, 179, 26);
-  width: 100vw;
+  
 }
 
 .card-left {
@@ -417,4 +425,100 @@ margin-top: 2%;
   border-color: rgb(107, 179, 26);
   border: solid;
   text-decoration: none;
+ }
+
+ @media screen and (max-width: 960px) {
+
+   .navbar-item-box {
+     
+     width: 100%;
+   }
+   
+
+   .navbar-item-box * {
+     font-size: 0.6rem;
+   }
+
+   /* profile page style */
+
+   .profile-container {
+    background: url(./imgs/profile-img.jpg) no-repeat center center fixed;
+    background-size: cover;
+   
+    
+   }
+
+   .edit-btn-link {
+     text-decoration: none;
+   }
+  
+ }
+
+ @media  screen and (max-width: 500px) {
+
+  /* navbar styling*/
+  .navbar-item-box .button,.navbar-logout-btn{
+    display: none;
+  }
+  .burguer {
+    background-color: #1a251d;
+    margin-right: 30px;
+    height: 100%;
+    line-height: 10vh;
+    display: flex;
+    
+    
+  }
+
+  .navbar-item-box .true{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 2em;
+    
+    
+  }
+
+   
+  .button strong {
+    font-size: 1em;
+    font-weight: 400;
+    
+  }
+  .svg-inline--fa.fa-w-14 {
+    width: 50px;
+  }
+  .burguer svg {
+    color: white;
+    height: 100%;
+    width: 100%;
+  }
+  .navbar-item-box {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: fit-content;
+  }
+/* home styling*/
+  .searchBar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8%;
+  }
+  .searchBar * {
+    margin-top: 7%;
+  }
+
+  .rangeslider__labels {
+    background-color: red;
+    display: none;
+    
+  }
+
+  /*form-house styling*/
+
+  #form-house textarea {
+    width: 100%;
+  }
  }

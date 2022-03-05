@@ -19,6 +19,7 @@ class HouseForm extends Component {
       
     }
   }
+  
 
   handleFormSubmit = (event) => {
     event.preventDefault()

@@ -29,7 +29,7 @@ class Profile extends Component {
     return(
       <div className="profile-container">
         <div>
-           <h2>{`${this.state.user.username}'s profile`}</h2>
+           <h2 className="prof-title">Your profile</h2>
         </div>
         <div className="profile-img-container">
           <img src={this.state.user.avatar} alt={this.state.username} className="profile-img"></img>
@@ -41,7 +41,7 @@ class Profile extends Component {
         <div>
           <h6>{this.state.user.email}</h6>
         </div>
-        <Link to='/edit_profile'><button className="edit-btn">Edit</button></Link>
+        <Link to='/edit_profile' className="edit-btn-link"><button className="edit-btn">Edit</button></Link>
         
         
         

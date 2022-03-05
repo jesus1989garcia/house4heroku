@@ -52,7 +52,7 @@ if (props.lat) {
     
   </div>
   )
-  } else return "noOoO" }}
+  } else return <p>Location is not showed</p> }}
   
  
 } 
