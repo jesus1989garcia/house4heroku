@@ -18,7 +18,7 @@ function SearchBox(props) {
       <PlacesAutoComplete  value={address} name='address'  onChange={setAddress} onSelect={handleSelect}>
         {({ getInputProps, suggestions, getSuggestionItemProps, loading}) => 
           <div>
-            <input {...getInputProps({placeholder:'type a city'})} />
+            <input {...getInputProps({placeholder:'search street'})} />
             <div>
               {loading ? <div>loading results</div> : null}
               {suggestions.map(suggestion => {
